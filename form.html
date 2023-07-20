@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" id="username" onkeyup="user_val()">
+        <span id="error"></span>
+    </form>
+
+    <script>
+        function user_val() {
+            var username = document.getElementById("username").value;
+
+            // document.write(username)
+            if (!username.match(/^[a-zA-Z]+/)) {
+                Error_msg("error", "username most start with char", "red")
+                // document.getElementById("error").innerHTML="User name start with alphabet";
+                // document.getElementById("error").style.color="red"
+
+            }
+            // else  if (!username.match(/^[0-9]+/)) {
+
+            //  Error_msg("error", "Username At Least One Number", "red")
+ 
+            // }
+             
+            else if (username.length < 8) {
+                Error_msg("error", "Length is at least 8 char", "red")
+            }
+            else {
+                Error_msg("error", "Valid", "green");
+
+            }
+
+        }
+
+        function Error_msg(id, msg, color) {
+            document.getElementById(id).innerHTML = msg;
+            document.getElementById(id).style.color = color;
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

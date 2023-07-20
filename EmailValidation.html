@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" onkeyup="Email_Validation()">
+        <span id="error_email"></span>
+
+    </form>
+    <Script>
+        function Email_Validation() {
+            var email = document.getElementById("email").value;
+            if (email.match(/^[0-9]+/)) {
+                error_message("error_email", "Email Start with Character", "red")
+            }
+            else if (!email.match(/^[a-z][a-z0-9]+[@](gmail)[.](com)/)){
+                error_message("error_email", "invalid formate of email", "red")
+
+            }
+            else {
+                error_message("error_email", "Valid", "green")
+            }
+        }
+
+        const error_message = (id, msg, color) => {
+            document.getElementById(id).innerHTML = msg;
+            document.getElementById(id).style.color = color;
+        }
+    </Script>
+
+</body>
+
+</html>

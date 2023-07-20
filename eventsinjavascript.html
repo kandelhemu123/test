@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tes1" onclick="conta()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A provident doloribus esse libero rem qui fugiat repellat autem rerum tempora, quia odio aliquam aliquid non molestiae veniam reprehenderit amet dicta!</p>
+    <button onclick="conta()">Click Me</button>
+    <button ondblclick="conta()">Click Me</button>
+
+<h1 id="tes">JAVA Polimerphism</h1>
+
+
+<script>
+    //Events in js
+
+const conta = ()=>{
+document.getElementById("tes").style.color="red"
+document.getElementById("tes").style.backgroundColor="blue"
+let n=document.getElementById("tes1");
+if(n.style.display==="none"){
+    document.getElementById("tes1").style.display="block";
+}
+else{
+    document.getElementById("tes1").style.display="none";
+
+}
+alert("Hello how are you? Where are you from?");
+}
+
+
+
+</script>
+</body>
+</html>

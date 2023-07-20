@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onkeypress="events()">
+    <!-- Browser events 
+        click
+        contextmenu
+        mouseover
+        mouesout
+mousedown
+mouseup
+submit
+focus
+DOMContentLoaded
+transitioned -->
+<div style="border: solid green;" ondblclick="tell()" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui excepturi laboriosam consequatur? Sit voluptate asperiores rem numquam. Incidunt consequatur unde fuga cupiditate a, aliquam earum ducimus atque enim deleniti? Numquam?</div>
+
+
+<p id="test5" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam repellat quidem officiis sapiente id
+        porro debitis necessitatibus rem dolor libero! Cumque quae obcaecati maiores incidunt beatae, aperiam corporis
+        placeat facilis odit accusantium ea eius libero culpa saepe molestias dolorem similique reiciendis voluptates
+        facere veniam reprehenderit laboriosam. Neque perspiciatis officiis maxime, labore non fuga corporis ut cumque
+        consequuntur quae ad quaerat dignissimos voluptatem pariatur molestias iure repellendus dolor. Nemo voluptates
+        numquam animi temporibus incidunt fuga quia praesentium delectus libero iure perferendis quam hic nostrum, quo
+        molestias neque accusantium labore modi!
+    </p>
+    <button style="cursor: pointer;" onclick="events()">Click Me</button>
+    <!-- <div id="test" style="background-color: red; width: 500px; height: 600px; border:solid green; cursor: pointer;"></div> -->
+    <!-- <button id="" onClick="Demo()">Click me</button> <br> <br>
+     -->
+    <!-- <button  onclick="events()">Click Me</button> -->
+
+    <!-- <img onclick="tell()" src="Associtivity.png" alt=""> -->
+    <!-- <button onmouseout="tell()">CLICK ME</button> -->
+
+
+    <Script>
+        // function events() {
+        //     document.write("HEMANTA KANDEL");
+
+        // }
+
+
+        // function Demo(){
+        //     console.log("HEM bro")
+        // }
+        // function tell() {
+        //     alert("If you click in image redirect here")
+        // }
+
+
+
+
+
+        function events() {
+            // alert("Hello")
+             document.getElementById("test5").style.backgroundColor="green"
+            let par = document.getElementById("test5");
+
+            if (par.style.display ==="none") {
+                par.style.display = "block";
+            } else {
+                par.style.display = "none";
+            }
+        }
+    </Script>
+</body>
+
+</html>
